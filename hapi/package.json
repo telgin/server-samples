@@ -1,0 +1,20 @@
+{
+  "name": "hapi",
+  "version": "1.0.0",
+  "description": "hapi server crud sample",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib/* && npx babel src -d lib",
+    "start": "npm run build && node lib/index.js"
+  },
+  "author": "github.com/telgin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0"
+  }
+}
